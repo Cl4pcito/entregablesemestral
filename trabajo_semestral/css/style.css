@@ -1,0 +1,117 @@
+body{
+    background-image: linear-gradient(135deg
+    ,rgb(46, 36, 138),
+    #a5c258, rgb(233, 22, 22), #161569,
+    #5A4894, #A950A1, #3bd30c);
+    background-size: 500%;
+    animation: fanimado 40s infinite;
+  }
+
+h4,img,h5{
+  border-style: solid;
+  border-width: 2px;
+  border-color: blueviolet;
+  border-radius: 12px;
+}
+
+
+/* button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: azure;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+} */
+
+/* button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, rgb(145, 13, 83), blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 12px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+} */
+
+
+
+
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fanimado{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+      background-position:0% 50% ;
+    }
+
+
+}
+
+.btn-outline-danger {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+
+.body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
